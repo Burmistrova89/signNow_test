@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/style.min.css")
+    body
+<!-- header-->
+
+      header.header
+       .logo
+          img.logo__icon(src="images/signNow.svg", alt="signNow")
+
+<!-- login-form-->
+
+      main
+          form.login-form(action="/", method="post")
+              .login-form__title
+                h1 Sign up for a free trial
+              .login-form__social
+                      button.social-btn(type="button")
+                          img(src="./images/Facebook-login.svg", alt="facebook")
+                          span Facebook
+                      button.social-btn(type="button")
+                          img(src="./images/Google-login.svg", alt="google")
+                          span Google
+                      button.social-btn(type="button")
+                          img(src="./images/Apple-login.svg", alt="apple")
+                          span Apple
+              .login-form__delimiter
+                  span or sign up using e-mail
+              .login-form__body
+                input.login-form__input#email(type="email", name="email", data-validate-field='email', placeholder="email@example.com")
+                input.login-form__input#password(type="password", name="password", data-validate-field='password', placeholder="Enter password" )
+              .login-form__submit
+                 button(type="submit") Start your free trial
+
+              .login-form__info
+                p 🎉 No credit card required
+              .login-form__have-account
+                p Already have an account? <a href=""> Login </a> or <a href=""> Login with SSO </a>
+              .login-form__terms
+                p By proceeding to create your account, you agree to signNow's <a href=""> Privacy Policy </a> and <a href=""> Terms of Service </a> and opt to receive marketing communications
+
+      section.converter
+        .converter__title
+          h1 Currency converter
+        .converter__wrap
+          .converter__group
+            button.converter-btn(type="button" data-valueFrom="USD" data-valueTo="UAH" ) USD to UAH
+            button.converter-btn(type="button" data-valueFrom="EUR" data-valueTo="UAH" ) EUR to UAH
+            button.converter-btn(type="button" data-valueFrom="USD" data-valueTo="EUR" ) USD to EUR
+          .converter-result Choose currency
+      //- script(src="./js/just-validate.min.js")
+      script(src="./js/main.min.js")
