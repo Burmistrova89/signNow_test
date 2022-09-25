@@ -86,7 +86,7 @@ body {
   height: 32px;
   text-align: center;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -136,14 +136,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
 .login-form__submit {
   margin-bottom: 8px;
 }
 .login-form__input {
   padding: 8px;
-  margin-bottom: 16px;
+  margin: 15px 0 2px;
   border: 1px solid #C7CED3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -217,7 +217,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #667988;
-  margin: 0;
+  margin: 0 5px;
 }
 .login-form__terms a {
   text-decoration: underline;
@@ -310,7 +310,6 @@ body {
   font-family: "Open Sans Semibold";
   font-size: 12px;
   line-height: 16px;
-  position: absolute;
   bottom: -5px;
   left: 8px;
 }
