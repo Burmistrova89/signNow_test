@@ -18,12 +18,14 @@
   font-weight: 700;
   font-style: normal;
  }
-//@font-face {
-//  font-family: "Graphik Bold";
-//  src: url("../fonts/Graphik-Bold.ttf") format("ttf"), url("../fonts/Graphik-Bold.woff") format("woff");
-//  font-weight: 700;
-//  font-style: normal;
-//}
+
+@font-face {
+  font-family: "Graphik Bold";
+  src: url("../fonts/Graphik-Bold.ttf") format("ttf"), url("../fonts/Graphik-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 $mainColor:#E5E5E5;
 $btnSubmitColor: #0777CF;
 
@@ -47,6 +49,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .logo {
   margin-top: 77px;
   margin-bottom: 60px;
@@ -55,6 +58,7 @@ body {
     display: block;
   }
 }
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -292,7 +296,6 @@ body {
   }
 }
 
-
 .js-validate-error-label {
   color: #E15554 !important;
   font-family: "Open Sans Semibold";
@@ -361,8 +364,6 @@ body {
   }
 }
 
-
-
 @media screen and (min-width:480px) {
   .form-group__social {
     .social-login {
@@ -381,11 +382,6 @@ body {
    // margin-top: 48px;
    // margin-bottom: 48px;
   }
-  //.login-form__have-account p, .login-form__terms p {
-  //  a {
-  //    font-size: 12px;
-  //  }
-  //}
 }
 
 @media screen and (max-width:480px) {
